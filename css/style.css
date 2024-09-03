@@ -94,8 +94,8 @@
     text-decoration: none;
   }
     
-  .header-ul li:after,
-  .header-ul2 li:after {
+  .header-ul > li:after,
+  .header-ul2 > li:after {
     content: "";
     position: absolute;
     width: 0%;
@@ -154,13 +154,15 @@
     padding: 12px 0px;
     letter-spacing: 2px;
     font-size: 16px;
+    margin-left: -20px;
   }
   .page1-btn {
+    margin-left: -20px;
     margin-top: 20px;
     padding: 15px 22px;
     font-size: 17px;
     border: 0;
-    border-radius: 4px;
+    border-radius: 10px;
     text-transform: capitalize;
   }
   .page1-btn:hover {
@@ -1225,12 +1227,23 @@
     transition: 1s;
     margin-top: 0px;
 }
+.I11:hover{
+    color: #ffffff;
+    background-color: #d65454;
+}
+.I22:hover{
+    color: #ffffff;
+    background-color: #d65454;
+}
+.I33:hover{
+    color: #ffffff;
+    background-color: #d65454;
+}
 .team-card:hover .img-overlay{
     visibility: visible;
 }
 .team-card:after {
     position: absolute;
-    z-index: 100;
     content: "";
     width: 0;
     height: 0;
@@ -1250,7 +1263,6 @@
 }
 .team-card::before {
     position: absolute;
-    z-index: 100;
     content: "";
     width: 0;
     height: 0;
